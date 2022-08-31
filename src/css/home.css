@@ -1,0 +1,119 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas: "mainItem mainItem mainItem mainItem" "item1 item2 item3 item4";
+  border: 2px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.mainItem {
+  grid-area: mainItem;
+  background: aliceblue;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 20px 0px;
+}
+.item1 {
+  grid-area: item1;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background: aliceblue;
+  text-align: center;
+  padding: 20px 0px;
+}
+.item2 {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background: aliceblue;
+  text-align: center;
+  padding: 20px 0px;
+}
+.item3 {
+  grid-area: item3;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background: aliceblue;
+  text-align: center;
+  padding: 20px 0px;
+}
+.item4 {
+  grid-area: item4;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background: aliceblue;
+  text-align: center;
+  padding: 20px 0px;
+}
+.itemWidth {
+  min-width: 225px;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.selectCities {
+  display: flex;
+  margin: 10px 0px;
+}
+.city {
+  padding: 20px;
+  margin: 10px;
+  font-size: 16px;
+  color: #000000;
+  cursor: pointer;
+  font-weight: 425;
+}
+.selected {
+  color: #00adf1;
+  font-weight: 600;
+}
+.temp_min {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 600;
+}
+.textAlignLeft {
+  text-align: left;
+}
+.temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dateColor {
+  color: grey;
+}
+@media screen and (max-width: 768px) {
+  .itemWidth {
+    min-width: 175px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .itemWidth {
+    min-width: 90px;
+  }
+  .city {
+    width: 50px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .itemWidth {
+    min-width: 80px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .itemWidth {
+    min-width: 70px;
+  }
+}
