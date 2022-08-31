@@ -1,8 +1,0 @@
-...
-
-[[headers]]
-  for = "/path/to/directory/*"
-  [headers.values]
-    Access-Control-Allow-Origin = "*"
-
-...
