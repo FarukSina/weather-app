@@ -1,14 +1,19 @@
 {
-  "version": 2,
-  "routes": [
+  "headers": [
     {
-      "src": "/components/HomeClassComponent",
-      "dest": "/components/HomeClassComponent.tsx",
-      "headers": {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Headers": "Content-Type, Authorization, Accept, Content-Length, Origin, User-Agent",
-        "Access-Control-Allow-Methods": "GET, POST, OPTIONS, HEAD, PATCH, PUT, DELETE"
-      }
+      "source": "http://api.weatherapi.com/v1/forecast.json?key=e8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8&q=London&days=7",
+      "headers": [
+        { "key": "Access-Control-Allow-Credentials", "value": "true" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET,OPTIONS,PATCH,DELETE,POST,PUT"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version"
+        }
+      ]
     }
   ]
 }
