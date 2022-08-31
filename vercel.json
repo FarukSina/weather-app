@@ -1,16 +1,14 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "src/index.ts",
-      "use": "@vercel/node"
-    }
-  ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "src/index.tsx",
-      "methods": ["GET", "POST", "PUT", "PATCH", "OPTIONS", "DELETE"]
+      "src": "/components/HomeClassComponent",
+      "dest": "/components/HomeClassComponent.tsx",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization, Accept, Content-Length, Origin, User-Agent",
+        "Access-Control-Allow-Methods": "GET, POST, OPTIONS, HEAD, PATCH, PUT, DELETE"
+      }
     }
   ]
 }
