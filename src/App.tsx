@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 // import Home from "./components/Home";
-import HomeClassComponent from "./components/HomeClassComponent";
+import WeatherComponent from "./components/WeatherComponent";
 import "./css/home.css"
 class App extends Component {
   cities = ["Toronto", "Istanbul", "Tokyo"];
@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         {/* <Home /> */}
-        <HomeClassComponent cities={this.cities} />
+        <WeatherComponent cities={this.cities} />
       </div>
     ); 
   }

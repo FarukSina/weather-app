@@ -11,6 +11,9 @@
     .addBorderRadius(@size){
         border-radius: @size;
     }
+    .fontSize(@size){
+        font-size: @size;
+    }
   }
   
 
@@ -92,7 +95,7 @@
 .city{
     padding: 20px;
     margin: 10px;
-    font-size: 16px;
+    #lib.fontSize(16px);
     color: #000000;
     cursor: pointer;
     font-weight: 425;
@@ -104,7 +107,19 @@
 }
 
 .temp_min{
-    font-size: 16px;
+    #lib.fontSize(16px);
+    color: #000000;
+    font-weight: 600;
+}
+.weather{
+    #lib.fontSize(20px)
+}
+
+.date{
+    #lib.fontSize(20px)
+}
+.mainTemp_min{
+    font-size: 20px;
     color: #000000;
     font-weight: 600;
 }

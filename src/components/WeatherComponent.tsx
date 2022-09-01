@@ -20,7 +20,7 @@ type WeatherState = {
   selectedCity : string;
 }
 
-class HomeClassComponent extends Component<Props, WeatherState> {
+class WeatherComponent extends Component<Props, WeatherState> {
   constructor(props: Props) {
     super(props);
     this.state = {
@@ -102,12 +102,12 @@ class HomeClassComponent extends Component<Props, WeatherState> {
               <div className="temp">
                 <img
                   className="weather2"
-                  src={item.day?.condition?.icon}
+                  src={item.day?.condition?.icon.replace('64x64', '128x128')}
                   alt="weather"
                 />
                 <div>
                   <div
-                    className="temp_min textAlignLeft" 
+                    className="mainTemp_min textAlignLeft" 
                   >
                     {Math.round(item.day?.avgtemp_c)}º
                   </div>
@@ -152,4 +152,4 @@ class HomeClassComponent extends Component<Props, WeatherState> {
     );
   }
 }
-export default HomeClassComponent;
+export default WeatherComponent;

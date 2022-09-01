@@ -83,6 +83,17 @@
   color: #000000;
   font-weight: 600;
 }
+.weather {
+  font-size: 20px;
+}
+.date {
+  font-size: 20px;
+}
+.mainTemp_min {
+  font-size: 20px;
+  color: #000000;
+  font-weight: 600;
+}
 .textAlignLeft {
   text-align: left;
 }
