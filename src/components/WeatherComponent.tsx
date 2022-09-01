@@ -41,7 +41,7 @@ class WeatherComponent extends Component<Props, WeatherState> {
 
   fetchWeatherDataAsync = async () => {
     const data = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=${process.env.REACT_APP_API_KEY}&q=${this.state.selectedCity}&days=5&aqi=no&alerts=no`,
+      `https://api.weatherapi.com/v1/forecast.json?key=${process.env.REACT_APP_API_KEY}&q=${this.state.selectedCity}&days=5&aqi=no&alerts=no`,
       {
         method: "GET",
         headers: {
